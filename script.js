@@ -14,13 +14,11 @@ buttonSub.addEventListener('click', subtract);
 // function
 
 function add() {
-    counter.style.color = 'red';
     count +=1;
     counter.innerHTML = count;
 }
 
 function subtract() {
-    counter.style.color = 'red';
     count -=1;
     counter.innerHTML = count;
 }
