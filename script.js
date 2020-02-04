@@ -18,17 +18,25 @@ buttonReset.addEventListener('click', reset);
 function add() {
     count +=1;
     counter.innerHTML = count;
+    if (count > 0) {
+        counter.style.color = 'green';
+    }
 }
 
 function subtract() {
     count -=1;
     counter.innerHTML = count;
+    if (count < 0) {
+        counter.style.color = 'red';
+    }
+    // counter.style.color = 'red';
 }
 
+// additional function add for reset button
 function reset() {
     count = 0;
     counter.innerHTML = count;
-    counter.style.color = 'red';
+    counter.style.color = 'blue';
     setTimeout(function() {
         counter.style.color = 'black';
     }, 1500);
