@@ -3,7 +3,8 @@
 const buttonAdd = document.getElementById('add');
 const buttonSub = document.getElementById('minus');
 let counter = document.getElementById('counter');
-let array;
+let array = [];
+let count = 0;
 
 // handlers
 
@@ -14,8 +15,21 @@ buttonSub.addEventListener('click', subtract);
 
 function add() {
     counter.style.color = 'red';
+    count +=1;
+    counter.innerHTML = count;
 }
 
 function subtract() {
-
+    counter.style.color = 'red';
+    count -=1;
+    counter.innerHTML = count;
 }
+
+// var button = document.getElementById("clickme"),
+//   count = 0;
+
+// button.onclick = function() {
+//   count += 1;
+//   button.innerHTML = "Click me: " + count;
+// };
+
