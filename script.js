@@ -14,12 +14,12 @@ buttonSub.addEventListener('click', subtract);
 // function
 
 function add() {
-    count +=1;
+    count ++;
     check();
 }
 
 function subtract() {
-    count -=1;
+    count --;
     check();
 }
 
