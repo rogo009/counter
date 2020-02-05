@@ -1,15 +1,12 @@
-// variables
+// variables & handlers
 
-const buttonAdd = document.getElementById('add');
-const buttonSub = document.getElementById('minus');
+const buttonAdd = document.getElementById('add').addEventListener('click', add);
+const buttonSub = document.getElementById('minus').addEventListener('click', subtract);
 const buttonReset = document.getElementById('reset').addEventListener('click', reset);
 let counter = document.getElementById('counter');
 let count = 0;
 
-// handlers
-
-buttonAdd.addEventListener('click', add);
-buttonSub.addEventListener('click', subtract);
+// handlers - see above handerls are attached to variables
 
 // function
 
@@ -27,11 +24,9 @@ function check() {
     counter.innerHTML = count;
     if (count > 0) {
         counter.style.color = 'green';
-    } 
-    if (count < 0) {
+    } else if (count < 0) {
         counter.style.color = 'red';
-    }
-    if (count === 0) {
+    } if (count === 0) {
         counter.style.color = 'black';
     }
 }
