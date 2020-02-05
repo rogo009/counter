@@ -6,8 +6,8 @@ body {
 }
 
 h1 {
-    font-size: 3em;
-    margin-top: 80px;
+    font-size: 4em;
+    margin-top: 50px;
 }
 
 .container {
@@ -20,11 +20,13 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 10px lightgray;
 }
 
 .counter {
-    font-size: 4em;
+    font-size: 5em;
     font-weight: 500;
+    margin: 10px;
 }
 
 button {
@@ -33,5 +35,5 @@ button {
     border-radius: 15px;
     border: none;
     outline: none;
-    margin: 20px;
+    margin: 30px 10px;
 }
