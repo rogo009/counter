@@ -4,7 +4,6 @@ const buttonAdd = document.getElementById('add');
 const buttonSub = document.getElementById('minus');
 const buttonReset = document.getElementById('reset');
 let counter = document.getElementById('counter');
-// let array = []; 
 let count = 0;
 
 // handlers
@@ -39,7 +38,8 @@ function check() {
     }
 }
 
-// additional function add for reset button
+// reset button
+
 function reset() {
     count = 0;
     counter.innerHTML = count;
