@@ -2,7 +2,7 @@
 
 const buttonAdd = document.getElementById('add');
 const buttonSub = document.getElementById('minus');
-const buttonReset = document.getElementById('reset');
+const buttonReset = document.getElementById('reset').addEventListener('click', reset);
 let counter = document.getElementById('counter');
 let count = 0;
 
@@ -10,23 +10,21 @@ let count = 0;
 
 buttonAdd.addEventListener('click', add);
 buttonSub.addEventListener('click', subtract);
-buttonReset.addEventListener('click', reset);
 
 // function
 
 function add() {
     count +=1;
-    counter.innerHTML = count;
     check();
 }
 
 function subtract() {
     count -=1;
-    counter.innerHTML = count;
     check();
 }
 
 function check() {
+    counter.innerHTML = count;
     if (count > 0) {
         counter.style.color = 'green';
     } 
@@ -48,4 +46,3 @@ function reset() {
         counter.style.color = 'black';
     }, 1500);
 }
-
